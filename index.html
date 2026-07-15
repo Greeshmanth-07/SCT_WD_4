@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Smart To-Do App | Greeshmanth</title>
+
+    <link rel="stylesheet" href="todo.css">
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+<body>
+
+<div class="container">
+
+    <div class="todo-box">
+
+        <h1><i class="fas fa-list-check"></i> Smart To-Do App</h1>
+
+        <p id="dateTime"></p>
+
+        <div class="input-section">
+
+            <input
+            type="text"
+            id="taskInput"
+            placeholder="Enter your task...">
+
+            <input
+            type="date"
+            id="taskDate">
+
+            <input
+            type="time"
+            id="taskTime">
+
+            <select id="priority">
+                <option>High</option>
+                <option selected>Medium</option>
+                <option>Low</option>
+            </select>
+
+            <button id="addBtn">
+                <i class="fas fa-plus"></i> Add Task
+            </button>
+
+        </div>
+
+        <div class="search-section">
+
+            <input
+            type="text"
+            id="search"
+            placeholder="Search Task">
+
+            <select id="filter">
+                <option value="all">All Tasks</option>
+                <option value="pending">Pending</option>
+                <option value="completed">Completed</option>
+            </select>
+
+        </div>
+
+        <div class="progress-box">
+
+            <div class="progress">
+                <div id="progressBar"></div>
+            </div>
+
+            <p id="progressText">0% Completed</p>
+
+        </div>
+
+        <ul id="taskList">
+
+        </ul>
+
+        <div class="summary">
+
+            <p>Total Tasks :
+                <span id="totalTasks">0</span>
+            </p>
+
+            <p>Completed :
+                <span id="completedTasks">0</span>
+            </p>
+
+            <p>Pending :
+                <span id="pendingTasks">0</span>
+            </p>
+
+        </div>
+
+    </div>
+
+</div>
+
+<script src="todo.js"></script>
+
+</body>
+</html>
